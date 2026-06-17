@@ -34,5 +34,5 @@ class PendaftaranReguler extends Pendaftaran {
     public function tampilkanInfoJalur() {
         return "Prodi: " . $this->pilihan_prodi . " (" . $this->lokasi_kampus . ")";
     }
-}
+
 ?>
