@@ -34,5 +34,5 @@ class PendaftaranPrestasi extends Pendaftaran {
     public function tampilkanInfoJalur() {
         return "Prestasi: " . $this->jenis_prestasi . " (" . $this->tingkat_prestasi . ")";
     }
-
+}
 ?>
