@@ -13,14 +13,14 @@ class PendaftaranPrestasi extends Pendaftaran {
             $data['asal_sekolah'], 
             $data['nilai_ujian'], 
             $data['biaya_pendaftaran_dasar']
-        ); [cite: 24]
+        ); 
         $this->jenis_prestasi = $data['jenis_prestasi'];
         $this->tingkat_prestasi = $data['tingkat_prestasi'];
     }
 
     // Metode Query Spesifik Jalur Prestasi
     public static function getDaftarPrestasi($db) {
-        $query = "SELECT * FROM tabel_pendaftaran WHERE jalur_pendaftaran = 'Prestasi'"; [cite: 36]
+        $query = "SELECT * FROM tabel_pendaftaran WHERE jalur_pendaftaran = 'Prestasi'"; 
         $stmt = $db->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll();

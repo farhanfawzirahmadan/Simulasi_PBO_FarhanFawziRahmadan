@@ -3,8 +3,8 @@ require_once 'Pendaftaran.php';
 
 class PendaftaranKedinasan extends Pendaftaran {
     // Properti tambahan spesifik jalur Kedinasan
-    private $sk_ikatan_dinas; [cite: 38]
-    private $instansi_sponsor; [cite: 38]
+    private $sk_ikatan_dinas; 
+    private $instansi_sponsor; 
 
     public function __construct($data) {
         parent::__construct(
@@ -13,14 +13,14 @@ class PendaftaranKedinasan extends Pendaftaran {
             $data['asal_sekolah'], 
             $data['nilai_ujian'], 
             $data['biaya_pendaftaran_dasar']
-        ); [cite: 24]
+        ); 
         $this->sk_ikatan_dinas = $data['sk_ikatan_dinas'];
         $this->instansi_sponsor = $data['instansi_sponsor'];
     }
 
     // Metode Query Spesifik Jalur Kedinasan
     public static function getDaftarKedinasan($db) {
-        $query = "SELECT * FROM tabel_pendaftaran WHERE jalur_pendaftaran = 'Kedinasan'"; [cite: 39]
+        $query = "SELECT * FROM tabel_pendaftaran WHERE jalur_pendaftaran = 'Kedinasan'"; 
         $stmt = $db->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll();

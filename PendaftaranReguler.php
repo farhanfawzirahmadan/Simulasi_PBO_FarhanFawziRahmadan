@@ -13,14 +13,14 @@ class PendaftaranReguler extends Pendaftaran {
             $data['asal_sekolah'], 
             $data['nilai_ujian'], 
             $data['biaya_pendaftaran_dasar']
-        ); [cite: 24]
+        ); 
         $this->pilihan_prodi = $data['pilihan_prodi'];
         $this->lokasi_kampus = $data['lokasi_kampus'];
     }
 
     // Metode Query Spesifik Jalur Reguler
     public static function getDaftarReguler($db) {
-        $query = "SELECT * FROM tabel_pendaftaran WHERE jalur_pendaftaran = 'Reguler'"; [cite: 32]
+        $query = "SELECT * FROM tabel_pendaftaran WHERE jalur_pendaftaran = 'Reguler'"; 
         $stmt = $db->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll();
