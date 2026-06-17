@@ -28,7 +28,7 @@ class PendaftaranReguler extends Pendaftaran {
 
     // WAJIB ADA (Dideklarasikan kosong dulu karena ini kerjaan Tahap 5)
     public function hitungTotalBiaya() {
-        return 0;
+        return $this->biaya_pendaftaran_dasar;
     }
 
     public function tampilkanInfoJalur() {
