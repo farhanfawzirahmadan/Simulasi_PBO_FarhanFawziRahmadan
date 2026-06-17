@@ -34,5 +34,5 @@ class PendaftaranKedinasan extends Pendaftaran {
     public function tampilkanInfoJalur() {
         return "Sponsor: " . $this->instansi_sponsor . " (SK: " . $this->sk_ikatan_dinas . ")";
     }
-}
+
 ?>
